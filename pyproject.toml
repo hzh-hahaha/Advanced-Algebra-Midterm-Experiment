@@ -1,0 +1,17 @@
+[project]
+name = "ill-conditioned-regularization"
+version = "0.1.0"
+description = "High algebra project on ill-conditioned linear operators and Tikhonov regularization."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.0",
+    "pandas>=2.2.0",
+    "pillow>=11.0.0",
+    "scikit-image>=0.25.0",
+    "scipy>=1.15.0",
+]
+
+[tool.uv]
+package = false

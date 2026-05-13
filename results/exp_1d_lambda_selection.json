@@ -1,0 +1,14 @@
+{
+  "seed": 20260590,
+  "n": 256,
+  "alpha": 8,
+  "condition_number": 100000000,
+  "rho": 0.001,
+  "lambda_min": 1e-16,
+  "lambda_max": 1.0,
+  "lambda_count": 120,
+  "oracle_lambda": 2.955209235202888e-08,
+  "oracle_relative_error": 0.7563485722590411,
+  "noise_norm": 0.0026375265738683546,
+  "csv": "D:\\WHU\\\u8bfe\u7a0b\\\u5927\u4e00\u4e0b\\\u5de5\u79d1\u9ad8\u7b49\u4ee3\u6570\uff08\u4e8c\uff09\\\u671f\u4e2d\u5c0f\u7ec4\u5b9e\u9a8c\\results\\exp_1d_lambda_selection.csv"
+}
