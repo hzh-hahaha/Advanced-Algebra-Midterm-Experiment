@@ -418,6 +418,8 @@ $$
 \kappa(B\otimes B)=\kappa(B)^2
 $$
 
+证明如下：设 $B$ 的奇异值分解为 $B = U \Sigma V^T$，其中奇异值为 $\sigma_1 \ge \dots \ge \sigma_n$。根据 Kronecker 积的性质：$$(B \otimes B) = (U \Sigma V^T) \otimes (U \Sigma V^T) = (U \otimes U) (\Sigma \otimes \Sigma) (V^T \otimes V^T)$$因为 $U$ 和 $V$ 是正交矩阵，根据 Kronecker 积保持正交性的性质，$U \otimes U$ 和 $V \otimes V$ 也是正交矩阵。因此，$\Sigma \otimes \Sigma$ 就是 $B \otimes B$ 的奇异值矩阵。其最大奇异值为 $\sigma_1 \cdot \sigma_1 = \sigma_1^2$，最小奇异值为 $\sigma_n \cdot \sigma_n = \sigma_n^2$。从而证得：$$\kappa(B \otimes B) = \frac{\sigma_1^2}{\sigma_n^2} = \left(\frac{\sigma_1}{\sigma_n}\right)^2 = \kappa(B)^2$$
+
 这说明若 $B$ 已经病态，则二维向量化算子会更加病态。
 
 ### 8.3 实验设置
