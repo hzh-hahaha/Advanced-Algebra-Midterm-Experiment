@@ -401,6 +401,17 @@ $$
 \mathrm{vec}(\tilde Y)=(B\otimes B)\mathrm{vec}(X)+\mathrm{vec}(E)
 $$
 
+其中 $\otimes$ 表示 Kronecker 积，即“每个元素乘上整个矩阵”，得到一个分块矩阵。
+
+设有矩阵 $A$（比如 $2\times 2$）和矩阵 $B$（比如 $3\times 3$），那么 $A \otimes B$ 就是一个 $(2\cdot3) \times (2\cdot3) = 6 \times 6$ 的大矩阵，它的每个块都是 $A$ 中对应元素乘以 $B$：
+
+$$
+A \otimes B = \begin{pmatrix}
+a_{11} B & a_{12} B \\
+a_{21} B & a_{22} B
+\end{pmatrix}
+$$
+
 因此二维图像复原本质上仍是线性系统求解问题，其线性算子为 $B\otimes B$。根据 Kronecker 积性质：
 
 $$
