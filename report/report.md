@@ -2,7 +2,7 @@
 
 课程：工科高等代数（二）  
 课题：病态算子构造与正则化  
-小组成员：待填写  
+小组成员：刘丰源、黄子涵、李昊峰  
 日期：2026 年 5 月
 
 ## 摘要
@@ -155,13 +155,13 @@ $$
 x_\lambda = \sum_{i=1}^r \frac{\sigma_i}{\sigma_i^2+\lambda}(u_i^T\tilde b)v_i
 $$
 
-与伪逆解中的放大因子 $1/\sigma_i$ 相比，Tikhonov 正则化中的谱滤波因子为：
+对照谱滤波解的表达式$x_{\text{滤波}} = \sum_i \phi_i \cdot \frac{u_i^T b}{\sigma_i} v_i$，Tikhonov 正则化中的谱滤波因子为：
 
 $$
-g_\lambda(\sigma_i)=\frac{\sigma_i}{\sigma_i^2+\lambda}
+g_\lambda(\sigma_i)=\frac{\sigma_i^2}{\sigma_i^2+\lambda}
 $$
 
-当 $\sigma_i$ 较小时，$g_\lambda(\sigma_i)$ 不会像 $1/\sigma_i$ 那样无限增大。因此，Tikhonov 正则化能够抑制小奇异值方向上的噪声放大。
+当 $\sigma_i$ 较小时，$g_\lambda(\sigma_i)$ 趋近于0，从而过滤掉放大噪声的小奇异值通道。因此，Tikhonov 正则化能够抑制小奇异值方向上的噪声放大。
 
 ## 3. 病态算子构造
 
